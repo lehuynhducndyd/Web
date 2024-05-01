@@ -21,6 +21,4 @@ li> a{
 span{
     background-color: rgba(255, 68, 0, 0.242); font-size: 15px; border-radius: 5px; padding: 3px;
 }
-td:hover{
-    background-color: rgb(247, 255, 163);
-}
+
