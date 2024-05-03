@@ -55,37 +55,28 @@
     </nav>
     <main>
         <div class="container-fluid pt-3">
-            <h2 style="color: rgb(210, 0, 0);">Đăng nhập Admin</h2>
+            <h2 class="text-center" style="color: rgb(210, 0, 0);">Đăng Nhập Admin</h2>
             <hr>
         </div>
-        <div>
-            <form action="quanly_admin.html" method="post" onsubmit="return ktdnad(this)">
-                <table>
-                    <tr>
-                        <th>Tên đăng nhập:</th>
-                        <td><input type="text" name="username" id=""></td>
-                    </tr>
-                    <tr>
-                        <th>Mật khẩu:</th>
-                        <td><input type="password" name="password" id=""></td>
-                    </tr>
-
-                    <tr>
-                        <td>
-                            <hr>
-                        </td>
-                        <td>
-                            <hr>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th></th>
-                        <th><button type="submit" class="btn btn-success">Đăng nhập admin</button></th>
-                    </tr>
-                    
-                </table>
-            </form>
-        </div>
+        <form action="quanly_admin.html" class="row" id="LoginForm" name="frm2"  onsubmit="return ktdnad(this)" >
+            <div class="col-4"></div>
+            <div class="col-4" style="padding-bottom: 50px;">
+            <div class="form-group">
+            <label for="tendangnhap">Tên đăng nhập:</label>
+            <input type="text" class="form-control"  placeholder="Nhập tên đăng nhập được cấp" name="username" required>
+          </div>
+          <div class="form-group">
+            <label for="pwd">Password:</label>
+            <input type="password" class="form-control" id="pwd" placeholder="Nhập mật khẩu" name="pwd" required>
+          </div>
+          <div class="checkbox">
+            <label><input type="checkbox" name="remember"> Remember me</label>
+          </div>
+          
+          <button style="margin-left: 180px;" type="submit" class="btn btn-primary">Đăng nhập</button>
+            </div>
+          <div class="col-4"></div>
+        </form>
 
     </main>
     <footer style="background-color: rgb(0, 0, 0); " >			

@@ -24,3 +24,10 @@ span{
 td:hover{
     background-color: rgb(247, 255, 163);
 }
+a{
+    text-decoration: none;
+    color: black;
+}
+a:visited{
+    color: black;
+}
