@@ -48,9 +48,14 @@ function ktdnad(f){
     return false
 }
 
+
 function thongbao1(){
     alert("Chức năng đang được phát triển")
 }
+function thongbao2(){
+    alert("Sản phẩm đã hết")
+}
+
 
 function kt(){
     var f =document.getElementById('RegistForm');
@@ -80,7 +85,8 @@ function kt(){
 
     var email = f.email.value.trim();
     var password = f.pwd.value.trim();
-
+   
+    
     // Kiểm tra xem tên đăng nhập đã tồn tại hay chưa
     const existingUsers = localStorage.getItem('registeredUsers') || '{}';
     const parsedUsers = JSON.parse(existingUsers);
@@ -94,7 +100,6 @@ function kt(){
     // Lưu thông tin đăng ký vào Local Storage
     parsedUsers[email] = password;
     localStorage.setItem('registeredUsers', JSON.stringify(parsedUsers));
-
     alert('Đăng ký thành công!');
     
 
@@ -132,6 +137,7 @@ function DangNhap() {
   // Check if username and password match a registered user
   if (parsedUsers[loginEmail] && parsedUsers[loginEmail] === loginPassword) {
     alert('Đăng nhập thành công!');
+
     window.location="index.html";
     // Perform actions after successful login (e.g., redirect to user profile)
   } else {
@@ -140,3 +146,4 @@ function DangNhap() {
   }
 
 };
+
